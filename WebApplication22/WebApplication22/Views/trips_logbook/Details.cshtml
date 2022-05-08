@@ -1,0 +1,62 @@
+﻿@model WebApplication22.Models.trips_logbook
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>Подробный просмотр записи в Журнале Рейсов</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cars_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cars_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.trips.start_point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trips.start_point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.trips.end_point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trips.end_point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.start_time_trip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start_time_trip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.end_time_trip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.end_time_trip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.idtrip_logbook }) |
+    @Html.ActionLink("Назад к Журналу Рейсов", "Index")
+</p>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication22.Models.Request2_Repairs_Result>
+@{
+    ViewBag.Title = "Запрос (ремонты)";
+}
+
+<h2>Запрос (ремонты)</h2>
+<h4>Выдать список ремонтов всех машин, отсортированный по длительности ремонта и по маркам машин.</h4>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cars_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type_rep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.time_rep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tableJoin)
+        </th>
+
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.cars_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.type_rep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.time_rep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tableJoin)
+            </td>
+        </tr>
+    }
+
+
+
+
+</table>

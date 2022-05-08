@@ -1,0 +1,67 @@
+﻿@model IEnumerable<WebApplication22.Models.trips_logbook>
+
+@{
+    ViewBag.Title = "Журнал Рейсов";
+}
+
+<h2>Список записей в Журнале Рейсов</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cars_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.trips.start_point)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.trips.end_point)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.start_time_trip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.end_time_trip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight)
+        </th>
+        
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cars_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.trips.start_point)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.trips.end_point)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.start_time_trip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.end_time_trip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.weight)
+        </td>
+        
+        
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.idtrip_logbook }) |
+            @Html.ActionLink("Просмотр", "Details", new { id=item.idtrip_logbook }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.idtrip_logbook })
+        </td>
+    </tr>
+}
+
+</table>

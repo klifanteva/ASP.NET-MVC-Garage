@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication22.Models.repairs>
+
+@{
+    ViewBag.Title = "Ремонты";
+}
+
+<h2>Список ремонтов</h2>
+
+<p>
+    @Html.ActionLink("Добавить ремонт", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.type_rep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.time_rep)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.type_rep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.time_rep)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.idrepair }) |
+            @Html.ActionLink("Просмотр", "Details", new { id=item.idrepair }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.idrepair })
+        </td>
+    </tr>
+}
+
+</table>

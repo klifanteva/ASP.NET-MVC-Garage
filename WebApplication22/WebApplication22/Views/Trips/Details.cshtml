@@ -1,0 +1,38 @@
+﻿@model WebApplication22.Models.trips
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>Подробный просмотр информации о рейсе</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.start_point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start_point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.end_point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.end_point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.distance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.distance)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.idtrip }) |
+    @Html.ActionLink("Назад к списку рейсов", "Index")
+</p>

@@ -1,0 +1,49 @@
+﻿@model WebApplication22.Models.cars
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>Подробный просмотр информации о машине</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.colour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.colour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type_car)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_car)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.number }) |
+    @Html.ActionLink("Назад к списку машин", "Index")
+</p>

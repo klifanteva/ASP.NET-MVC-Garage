@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebApplication22.Models.Request_Weight_Result>
+@{
+    ViewBag.Title = "Запрос (вес)";
+}
+<h2>Запрос (вес)</h2>
+<h4>Выдать список масс перевезенного груза для каждой грузовой машины за определенный период, отсортированный по номерам машин и массам груза</h4>
+
+
+@using (Html.BeginForm("IndexQ1", "RequestWeight"))
+{@Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.Label("Введите начало периода (дата и время):", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Editor("start_time", new { htmlAttributes = new { @class = "form-control", @type = "date" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Введите окончание периода (дата и время):", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Editor("end_time", new { htmlAttributes = new { @class = "form-control", @type = "date" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Показать" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.start_time_trip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.end_time_trip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tableJoin)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.start_time_trip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.end_time_trip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tableJoin)
+            </td>
+        </tr>
+    }
+
+</table>
+
+

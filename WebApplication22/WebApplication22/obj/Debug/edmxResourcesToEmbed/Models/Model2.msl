@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище carsModel1Container" CdmEntityContainer="carsEntities1">
+    <EntitySetMapping Name="cars">
+      <EntityTypeMapping TypeName="carsModel1.cars">
+        <MappingFragment StoreEntitySet="cars">
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="colour" ColumnName="colour" />
+          <ScalarProperty Name="type_car" ColumnName="type_car" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repairs">
+      <EntityTypeMapping TypeName="carsModel1.repairs">
+        <MappingFragment StoreEntitySet="repairs">
+          <ScalarProperty Name="idrepair" ColumnName="idrepair" />
+          <ScalarProperty Name="time_rep" ColumnName="time_rep" />
+          <ScalarProperty Name="type_rep" ColumnName="type_rep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="repairs_logbook">
+      <EntityTypeMapping TypeName="carsModel1.repairs_logbook">
+        <MappingFragment StoreEntitySet="repairs_logbook">
+          <ScalarProperty Name="idrepair_logbook" ColumnName="idrepair_logbook" />
+          <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+          <ScalarProperty Name="repairs_idrepair" ColumnName="repairs_idrepair" />
+          <ScalarProperty Name="start_time_rep" ColumnName="start_time_rep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="trips">
+      <EntityTypeMapping TypeName="carsModel1.trips">
+        <MappingFragment StoreEntitySet="trips">
+          <ScalarProperty Name="idtrip" ColumnName="idtrip" />
+          <ScalarProperty Name="distance" ColumnName="distance" />
+          <ScalarProperty Name="end_point" ColumnName="end_point" />
+          <ScalarProperty Name="start_point" ColumnName="start_point" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="trips_logbook">
+      <EntityTypeMapping TypeName="carsModel1.trips_logbook">
+        <MappingFragment StoreEntitySet="trips_logbook">
+          <ScalarProperty Name="idtrip_logbook" ColumnName="idtrip_logbook" />
+          <ScalarProperty Name="trips_idtrip" ColumnName="trips_idtrip" />
+          <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+          <ScalarProperty Name="start_time_trip" ColumnName="start_time_trip" />
+          <ScalarProperty Name="end_time_trip" ColumnName="end_time_trip" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Request_Weight" FunctionName="Хранилище carsModel1.Request_Weight">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="carsModel1.Request_Weight_Result">
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="start_time_trip" ColumnName="start_time_trip" />
+          <ScalarProperty Name="end_time_trip" ColumnName="end_time_trip" />
+          <ScalarProperty Name="tableJoin" ColumnName="tableJoin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Request2_Repairs" FunctionName="Хранилище carsModel1.Request2_Repairs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="carsModel1.Request2_Repairs_Result">
+          <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+          <ScalarProperty Name="type_rep" ColumnName="type_rep" />
+          <ScalarProperty Name="time_rep" ColumnName="time_rep" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="tableJoin" ColumnName="tableJoin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

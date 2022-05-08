@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cars">
+    <Key>
+      <PropertyRef Name="number" />
+    </Key>
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="brand" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="colour" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="type_car" Type="Boolean" />
+    <NavigationProperty Name="repairs_logbook" Relationship="Self.FK__repairs_l__cars___1B0907CE" FromRole="cars" ToRole="repairs_logbook" />
+    <NavigationProperty Name="trips_logbook" Relationship="Self.FK__trips_log__cars___164452B1" FromRole="cars" ToRole="trips_logbook" />
+  </EntityType>
+  <EntityType Name="repairs">
+    <Key>
+      <PropertyRef Name="idrepair" />
+    </Key>
+    <Property Name="idrepair" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="time_rep" Type="Int32" />
+    <Property Name="type_rep" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="repairs_logbook" Relationship="Self.FK__repairs_l__repai__1A14E395" FromRole="repairs" ToRole="repairs_logbook" />
+  </EntityType>
+  <EntityType Name="repairs_logbook">
+    <Key>
+      <PropertyRef Name="idrepair_logbook" />
+    </Key>
+    <Property Name="idrepair_logbook" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cars_number" Type="Int32" Nullable="false" />
+    <Property Name="repairs_idrepair" Type="Int32" Nullable="false" />
+    <Property Name="start_time_rep" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="cars" Relationship="Self.FK__repairs_l__cars___1B0907CE" FromRole="repairs_logbook" ToRole="cars" />
+    <NavigationProperty Name="repairs" Relationship="Self.FK__repairs_l__repai__1A14E395" FromRole="repairs_logbook" ToRole="repairs" />
+  </EntityType>
+  <EntityType Name="trips">
+    <Key>
+      <PropertyRef Name="idtrip" />
+    </Key>
+    <Property Name="idtrip" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="distance" Type="Single" />
+    <Property Name="end_point" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="start_point" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="trips_logbook" Relationship="Self.FK__trips_log__trips__173876EA" FromRole="trips" ToRole="trips_logbook" />
+  </EntityType>
+  <EntityType Name="trips_logbook">
+    <Key>
+      <PropertyRef Name="idtrip_logbook" />
+    </Key>
+    <Property Name="idtrip_logbook" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="trips_idtrip" Type="Int32" Nullable="false" />
+    <Property Name="cars_number" Type="Int32" Nullable="false" />
+    <Property Name="start_time_trip" Type="DateTime" Precision="3" />
+    <Property Name="end_time_trip" Type="DateTime" Precision="3" />
+    <Property Name="weight" Type="Single" />
+    <NavigationProperty Name="cars" Relationship="Self.FK__trips_log__cars___164452B1" FromRole="trips_logbook" ToRole="cars" />
+    <NavigationProperty Name="trips" Relationship="Self.FK__trips_log__trips__173876EA" FromRole="trips_logbook" ToRole="trips" />
+  </EntityType>
+  <Association Name="FK__repairs_l__cars___1B0907CE">
+    <End Role="cars" Type="Self.cars" Multiplicity="1" />
+    <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cars">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="repairs_logbook">
+        <PropertyRef Name="cars_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__trips_log__cars___164452B1">
+    <End Role="cars" Type="Self.cars" Multiplicity="1" />
+    <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cars">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="trips_logbook">
+        <PropertyRef Name="cars_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__repairs_l__repai__1A14E395">
+    <End Role="repairs" Type="Self.repairs" Multiplicity="1" />
+    <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="repairs">
+        <PropertyRef Name="idrepair" />
+      </Principal>
+      <Dependent Role="repairs_logbook">
+        <PropertyRef Name="repairs_idrepair" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__trips_log__trips__173876EA">
+    <End Role="trips" Type="Self.trips" Multiplicity="1" />
+    <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trips">
+        <PropertyRef Name="idtrip" />
+      </Principal>
+      <Dependent Role="trips_logbook">
+        <PropertyRef Name="trips_idtrip" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="carsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cars" EntityType="Self.cars" />
+    <EntitySet Name="repairs" EntityType="Self.repairs" />
+    <EntitySet Name="repairs_logbook" EntityType="Self.repairs_logbook" />
+    <EntitySet Name="trips" EntityType="Self.trips" />
+    <EntitySet Name="trips_logbook" EntityType="Self.trips_logbook" />
+    <AssociationSet Name="FK__repairs_l__cars___1B0907CE" Association="Self.FK__repairs_l__cars___1B0907CE">
+      <End Role="cars" EntitySet="cars" />
+      <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK__trips_log__cars___164452B1" Association="Self.FK__trips_log__cars___164452B1">
+      <End Role="cars" EntitySet="cars" />
+      <End Role="trips_logbook" EntitySet="trips_logbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK__repairs_l__repai__1A14E395" Association="Self.FK__repairs_l__repai__1A14E395">
+      <End Role="repairs" EntitySet="repairs" />
+      <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+    </AssociationSet>
+    <AssociationSet Name="FK__trips_log__trips__173876EA" Association="Self.FK__trips_log__trips__173876EA">
+      <End Role="trips" EntitySet="trips" />
+      <End Role="trips_logbook" EntitySet="trips_logbook" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

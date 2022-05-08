@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApplication22.Models.cars>
+
+@{
+    ViewBag.Title = "Машины";
+}
+
+<h2>Список машин</h2>
+
+<p>
+    @Html.ActionLink("Добавить машину", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.colour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type_car)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.colour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type_car)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.number }) |
+            @Html.ActionLink("Детали", "Details", new { id=item.number }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.number })
+        </td>
+    </tr>
+}
+
+</table>

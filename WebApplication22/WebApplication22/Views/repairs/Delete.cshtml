@@ -1,0 +1,41 @@
+﻿@model WebApplication22.Models.repairs
+
+@{
+    ViewBag.Title = "Удалить";
+}
+
+<h2>Удаление машины</h2>
+
+<h3>Вы уверены, что хотите удалить эту запись?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_rep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.time_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time_rep)
+        </dd>
+
+        
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад к списку ремонтов", "Index")
+        </div>
+    }
+</div>

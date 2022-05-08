@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WebApplication22.Models.trips>
+
+@{
+    ViewBag.Title = "Рейсы";
+}
+
+<h2>Список рейсов</h2>
+
+<p>
+    @Html.ActionLink("Добавить рейс", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.start_point)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.end_point)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.distance)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.start_point)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.end_point)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.distance)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Edit", new { id=item.idtrip }) |
+            @Html.ActionLink("Просмотр", "Details", new { id=item.idtrip }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.idtrip })
+        </td>
+    </tr>
+}
+
+</table>

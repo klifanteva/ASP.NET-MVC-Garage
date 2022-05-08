@@ -1,0 +1,35 @@
+﻿@model WebApplication22.Models.repairs
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>Подробный просмотр информации о ремонте</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_rep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.time_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time_rep)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.idrepair }) |
+    @Html.ActionLink("Назад к списку ремонтов", "Index")
+</p>

@@ -1,0 +1,39 @@
+﻿@model WebApplication22.Models.repairs_logbook
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>Подробный просмотр записи в Журнале Ремонтов</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cars_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cars_number)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.start_time_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start_time_rep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.repairs.type_rep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.repairs.type_rep)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.idrepair_logbook }) |
+    @Html.ActionLink("Назад к Журналу Ремонтов", "Index")
+</p>

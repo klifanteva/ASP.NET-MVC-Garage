@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище carsModel1" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="cars">
+          <Key>
+            <PropertyRef Name="number" />
+          </Key>
+          <Property Name="number" Type="int" Nullable="false" />
+          <Property Name="brand" Type="varchar" MaxLength="45" />
+          <Property Name="colour" Type="varchar" MaxLength="45" />
+          <Property Name="type_car" Type="bit" />
+        </EntityType>
+        <EntityType Name="repairs">
+          <Key>
+            <PropertyRef Name="idrepair" />
+          </Key>
+          <Property Name="idrepair" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="time_rep" Type="int" />
+          <Property Name="type_rep" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="repairs_logbook">
+          <Key>
+            <PropertyRef Name="idrepair_logbook" />
+          </Key>
+          <Property Name="idrepair_logbook" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cars_number" Type="int" Nullable="false" />
+          <Property Name="repairs_idrepair" Type="int" Nullable="false" />
+          <Property Name="start_time_rep" Type="datetime" />
+        </EntityType>
+        <EntityType Name="trips">
+          <Key>
+            <PropertyRef Name="idtrip" />
+          </Key>
+          <Property Name="idtrip" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="distance" Type="real" />
+          <Property Name="end_point" Type="varchar" MaxLength="45" />
+          <Property Name="start_point" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="trips_logbook">
+          <Key>
+            <PropertyRef Name="idtrip_logbook" />
+          </Key>
+          <Property Name="idtrip_logbook" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="trips_idtrip" Type="int" Nullable="false" />
+          <Property Name="cars_number" Type="int" Nullable="false" />
+          <Property Name="start_time_trip" Type="datetime" />
+          <Property Name="end_time_trip" Type="datetime" />
+          <Property Name="weight" Type="real" />
+        </EntityType>
+        <Association Name="FK__repairs_l__cars___1B0907CE">
+          <End Role="cars" Type="Self.cars" Multiplicity="1" />
+          <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="number" />
+            </Principal>
+            <Dependent Role="repairs_logbook">
+              <PropertyRef Name="cars_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__repairs_l__repai__1A14E395">
+          <End Role="repairs" Type="Self.repairs" Multiplicity="1" />
+          <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="repairs">
+              <PropertyRef Name="idrepair" />
+            </Principal>
+            <Dependent Role="repairs_logbook">
+              <PropertyRef Name="repairs_idrepair" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips_log__cars___164452B1">
+          <End Role="cars" Type="Self.cars" Multiplicity="1" />
+          <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="number" />
+            </Principal>
+            <Dependent Role="trips_logbook">
+              <PropertyRef Name="cars_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips_log__trips__173876EA">
+          <End Role="trips" Type="Self.trips" Multiplicity="1" />
+          <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="trips">
+              <PropertyRef Name="idtrip" />
+            </Principal>
+            <Dependent Role="trips_logbook">
+              <PropertyRef Name="trips_idtrip" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Request_Weight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="start_time" Type="datetime" Mode="In" />
+          <Parameter Name="end_time" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="Request2_Repairs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Хранилище carsModel1Container">
+          <EntitySet Name="cars" EntityType="Self.cars" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="repairs" EntityType="Self.repairs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="repairs_logbook" EntityType="Self.repairs_logbook" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="trips" EntityType="Self.trips" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="trips_logbook" EntityType="Self.trips_logbook" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__repairs_l__cars___1B0907CE" Association="Self.FK__repairs_l__cars___1B0907CE">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__repairs_l__repai__1A14E395" Association="Self.FK__repairs_l__repai__1A14E395">
+            <End Role="repairs" EntitySet="repairs" />
+            <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips_log__cars___164452B1" Association="Self.FK__trips_log__cars___164452B1">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="trips_logbook" EntitySet="trips_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips_log__trips__173876EA" Association="Self.FK__trips_log__trips__173876EA">
+            <End Role="trips" EntitySet="trips" />
+            <End Role="trips_logbook" EntitySet="trips_logbook" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="carsModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cars">
+          <Key>
+            <PropertyRef Name="number" />
+          </Key>
+          <Property Name="number" Type="Int32" Nullable="false" />
+          <Property Name="brand" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="colour" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="type_car" Type="Boolean" />
+          <NavigationProperty Name="repairs_logbook" Relationship="Self.FK__repairs_l__cars___1B0907CE" FromRole="cars" ToRole="repairs_logbook" />
+          <NavigationProperty Name="trips_logbook" Relationship="Self.FK__trips_log__cars___164452B1" FromRole="cars" ToRole="trips_logbook" />
+        </EntityType>
+        <EntityType Name="repairs">
+          <Key>
+            <PropertyRef Name="idrepair" />
+          </Key>
+          <Property Name="idrepair" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="time_rep" Type="Int32" />
+          <Property Name="type_rep" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="repairs_logbook" Relationship="Self.FK__repairs_l__repai__1A14E395" FromRole="repairs" ToRole="repairs_logbook" />
+        </EntityType>
+        <EntityType Name="repairs_logbook">
+          <Key>
+            <PropertyRef Name="idrepair_logbook" />
+          </Key>
+          <Property Name="idrepair_logbook" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cars_number" Type="Int32" Nullable="false" />
+          <Property Name="repairs_idrepair" Type="Int32" Nullable="false" />
+          <Property Name="start_time_rep" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="cars" Relationship="Self.FK__repairs_l__cars___1B0907CE" FromRole="repairs_logbook" ToRole="cars" />
+          <NavigationProperty Name="repairs" Relationship="Self.FK__repairs_l__repai__1A14E395" FromRole="repairs_logbook" ToRole="repairs" />
+        </EntityType>
+        <EntityType Name="trips">
+          <Key>
+            <PropertyRef Name="idtrip" />
+          </Key>
+          <Property Name="idtrip" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="distance" Type="Single" />
+          <Property Name="end_point" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="start_point" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="trips_logbook" Relationship="Self.FK__trips_log__trips__173876EA" FromRole="trips" ToRole="trips_logbook" />
+        </EntityType>
+        <EntityType Name="trips_logbook">
+          <Key>
+            <PropertyRef Name="idtrip_logbook" />
+          </Key>
+          <Property Name="idtrip_logbook" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="trips_idtrip" Type="Int32" Nullable="false" />
+          <Property Name="cars_number" Type="Int32" Nullable="false" />
+          <Property Name="start_time_trip" Type="DateTime" Precision="3" />
+          <Property Name="end_time_trip" Type="DateTime" Precision="3" />
+          <Property Name="weight" Type="Single" />
+          <NavigationProperty Name="cars" Relationship="Self.FK__trips_log__cars___164452B1" FromRole="trips_logbook" ToRole="cars" />
+          <NavigationProperty Name="trips" Relationship="Self.FK__trips_log__trips__173876EA" FromRole="trips_logbook" ToRole="trips" />
+        </EntityType>
+        <Association Name="FK__repairs_l__cars___1B0907CE">
+          <End Role="cars" Type="Self.cars" Multiplicity="1" />
+          <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="number" />
+            </Principal>
+            <Dependent Role="repairs_logbook">
+              <PropertyRef Name="cars_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips_log__cars___164452B1">
+          <End Role="cars" Type="Self.cars" Multiplicity="1" />
+          <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="number" />
+            </Principal>
+            <Dependent Role="trips_logbook">
+              <PropertyRef Name="cars_number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__repairs_l__repai__1A14E395">
+          <End Role="repairs" Type="Self.repairs" Multiplicity="1" />
+          <End Role="repairs_logbook" Type="Self.repairs_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="repairs">
+              <PropertyRef Name="idrepair" />
+            </Principal>
+            <Dependent Role="repairs_logbook">
+              <PropertyRef Name="repairs_idrepair" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__trips_log__trips__173876EA">
+          <End Role="trips" Type="Self.trips" Multiplicity="1" />
+          <End Role="trips_logbook" Type="Self.trips_logbook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="trips">
+              <PropertyRef Name="idtrip" />
+            </Principal>
+            <Dependent Role="trips_logbook">
+              <PropertyRef Name="trips_idtrip" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="carsEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cars" EntityType="Self.cars" />
+          <EntitySet Name="repairs" EntityType="Self.repairs" />
+          <EntitySet Name="repairs_logbook" EntityType="Self.repairs_logbook" />
+          <EntitySet Name="trips" EntityType="Self.trips" />
+          <EntitySet Name="trips_logbook" EntityType="Self.trips_logbook" />
+          <AssociationSet Name="FK__repairs_l__cars___1B0907CE" Association="Self.FK__repairs_l__cars___1B0907CE">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips_log__cars___164452B1" Association="Self.FK__trips_log__cars___164452B1">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="trips_logbook" EntitySet="trips_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__repairs_l__repai__1A14E395" Association="Self.FK__repairs_l__repai__1A14E395">
+            <End Role="repairs" EntitySet="repairs" />
+            <End Role="repairs_logbook" EntitySet="repairs_logbook" />
+          </AssociationSet>
+          <AssociationSet Name="FK__trips_log__trips__173876EA" Association="Self.FK__trips_log__trips__173876EA">
+            <End Role="trips" EntitySet="trips" />
+            <End Role="trips_logbook" EntitySet="trips_logbook" />
+          </AssociationSet>
+          <FunctionImport Name="Request_Weight" ReturnType="Collection(carsModel1.Request_Weight_Result)">
+            <Parameter Name="start_time" Mode="In" Type="DateTime" />
+            <Parameter Name="end_time" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Request2_Repairs" ReturnType="Collection(carsModel1.Request2_Repairs_Result)" />
+        </EntityContainer>
+        <ComplexType Name="Request_Weight_Result">
+          <Property Type="Int32" Name="number" Nullable="true" />
+          <Property Type="Single" Name="weight" Nullable="true" />
+          <Property Type="DateTime" Name="start_time_trip" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="end_time_trip" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="tableJoin" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Request2_Repairs_Result">
+          <Property Type="Int32" Name="cars_number" Nullable="false" />
+          <Property Type="String" Name="type_rep" Nullable="true" MaxLength="45" />
+          <Property Type="Int32" Name="time_rep" Nullable="true" />
+          <Property Type="String" Name="brand" Nullable="true" MaxLength="45" />
+          <Property Type="DateTime" Name="tableJoin" Nullable="true" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище carsModel1Container" CdmEntityContainer="carsEntities1">
+          <EntitySetMapping Name="cars">
+            <EntityTypeMapping TypeName="carsModel1.cars">
+              <MappingFragment StoreEntitySet="cars">
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="brand" ColumnName="brand" />
+                <ScalarProperty Name="colour" ColumnName="colour" />
+                <ScalarProperty Name="type_car" ColumnName="type_car" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="repairs">
+            <EntityTypeMapping TypeName="carsModel1.repairs">
+              <MappingFragment StoreEntitySet="repairs">
+                <ScalarProperty Name="idrepair" ColumnName="idrepair" />
+                <ScalarProperty Name="time_rep" ColumnName="time_rep" />
+                <ScalarProperty Name="type_rep" ColumnName="type_rep" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="repairs_logbook">
+            <EntityTypeMapping TypeName="carsModel1.repairs_logbook">
+              <MappingFragment StoreEntitySet="repairs_logbook">
+                <ScalarProperty Name="idrepair_logbook" ColumnName="idrepair_logbook" />
+                <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+                <ScalarProperty Name="repairs_idrepair" ColumnName="repairs_idrepair" />
+                <ScalarProperty Name="start_time_rep" ColumnName="start_time_rep" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trips">
+            <EntityTypeMapping TypeName="carsModel1.trips">
+              <MappingFragment StoreEntitySet="trips">
+                <ScalarProperty Name="idtrip" ColumnName="idtrip" />
+                <ScalarProperty Name="distance" ColumnName="distance" />
+                <ScalarProperty Name="end_point" ColumnName="end_point" />
+                <ScalarProperty Name="start_point" ColumnName="start_point" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trips_logbook">
+            <EntityTypeMapping TypeName="carsModel1.trips_logbook">
+              <MappingFragment StoreEntitySet="trips_logbook">
+                <ScalarProperty Name="idtrip_logbook" ColumnName="idtrip_logbook" />
+                <ScalarProperty Name="trips_idtrip" ColumnName="trips_idtrip" />
+                <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+                <ScalarProperty Name="start_time_trip" ColumnName="start_time_trip" />
+                <ScalarProperty Name="end_time_trip" ColumnName="end_time_trip" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Request_Weight" FunctionName="Хранилище carsModel1.Request_Weight">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="carsModel1.Request_Weight_Result">
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="start_time_trip" ColumnName="start_time_trip" />
+                <ScalarProperty Name="end_time_trip" ColumnName="end_time_trip" />
+                <ScalarProperty Name="tableJoin" ColumnName="tableJoin" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Request2_Repairs" FunctionName="Хранилище carsModel1.Request2_Repairs">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="carsModel1.Request2_Repairs_Result">
+                <ScalarProperty Name="cars_number" ColumnName="cars_number" />
+                <ScalarProperty Name="type_rep" ColumnName="type_rep" />
+                <ScalarProperty Name="time_rep" ColumnName="time_rep" />
+                <ScalarProperty Name="brand" ColumnName="brand" />
+                <ScalarProperty Name="tableJoin" ColumnName="tableJoin" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

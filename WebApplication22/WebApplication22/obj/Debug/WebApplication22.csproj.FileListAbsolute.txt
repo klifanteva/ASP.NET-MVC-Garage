@@ -1,0 +1,166 @@
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\ApplicationInsights.config
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\csc.exe
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\System.Collections.Immutable.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\System.Reflection.Metadata.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\vbc.exe
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\VBCSCompiler.exe
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\VBCSCompiler.exe.config
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.dll.config
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.pdb
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Antlr3.Runtime.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Agent.Intercept.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.DependencyCollector.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Web.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.WindowsServer.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.ApplicationInsights.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Core.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Cookies.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Facebook.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Google.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.OAuth.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Twitter.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Web.Infrastructure.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Newtonsoft.Json.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Owin.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Helpers.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Mvc.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Optimization.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Razor.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Deployment.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Razor.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebGrease.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.DependencyCollector.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Web.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.WindowsServer.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.ApplicationInsights.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Helpers.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Mvc.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Optimization.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Razor.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Deployment.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Razor.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Antlr3.Runtime.pdb
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Newtonsoft.Json.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Core.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Facebook.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Cookies.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.OAuth.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Google.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Twitter.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.dll
+D:\универ\4 курс\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.pdb
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\ApplicationInsights.config
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\csc.exe
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\System.Collections.Immutable.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\System.Reflection.Metadata.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\vbc.exe
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\VBCSCompiler.exe
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\roslyn\VBCSCompiler.exe.config
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.dll.config
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebApplication22.pdb
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Antlr3.Runtime.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Agent.Intercept.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.DependencyCollector.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Web.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.WindowsServer.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.ApplicationInsights.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Google.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Web.Infrastructure.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Newtonsoft.Json.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Owin.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Helpers.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Mvc.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Optimization.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Razor.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Deployment.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Razor.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\WebGrease.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.DependencyCollector.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.Web.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AI.WindowsServer.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.ApplicationInsights.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Helpers.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Mvc.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Optimization.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.Razor.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Deployment.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\System.Web.WebPages.Razor.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Antlr3.Runtime.pdb
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Newtonsoft.Json.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Google.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csproj.AssemblyReference.cache
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csproj.CoreCompileInputs.cache
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csproj.CopyComplete
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.dll
+D:\ИРНИТУ\C#\Управление данными\Курсовая работа\WebApplication22\WebApplication22\obj\Debug\WebApplication22.pdb
